@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #999;
+}
+.grid-row {
+  margin-left: -25px;
+  margin-right: -25px;
+  /*background: blue;*/
+}
+.col-x3 {
+  width: 33.33%;
+  float: left;
+  padding: 25px 25px;
+}
+.col-x5 {
+  width: 20%;
+  float: left;
+  padding: 25px 25px;
+}
+.content {
+  background: #222;
+  height: 100px;
+}
+.red {
+  background: red;
+  width: 100%;
+  height: 100px;
+}
+.col-4 {
+  float: left;
+  width: 25%;
+  padding: 25px 25px;
+
+}
+.col-8 {
+  float: left;
+  width: 75%;
+  padding: 25px 25px;
+
+}
